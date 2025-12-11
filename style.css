@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #1a1a2e; /* Dark background */
+    color: #e4e4e4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.quiz-container {
+    background: #2a0050; /* Slightly lighter background for the container */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h1 {
+    color: #00bcd4; /* Accent color for the title */
+    margin-bottom: 30px;
+}
+
+#quiz {
+    padding: 20px;
+    background: #3c006b;
+    border-radius: 10px;
+}
+
+#question-text {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.btn-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.btn {
+    background: #6a1b9a; /* Button color */
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s, transform 0.1s;
+}
+
+.btn:hover:not([disabled]) {
+    background: #7b1fa2;
+}
+
+.btn:active:not([disabled]) {
+    transform: scale(0.98);
+}
+
+.btn.correct {
+    background: #4caf50; /* Green for correct answer */
+}
+
+.btn.incorrect {
+    background: #f44336; /* Red for incorrect answer */
+}
+
+.btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+#next-btn, #restart-btn {
+    width: 50%;
+    margin-top: 20px;
+    background: #00bcd4; /* Accent color for main buttons */
+    color: #1a1a2e;
+    font-weight: bold;
+}
+
+#next-btn:hover {
+    background: #00e5ff;
+}
+
+.result-container {
+    margin-top: 30px;
+    padding: 30px;
+    background: #3c006b;
+    border-radius: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+#final-score {
+    color: #00bcd4;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
